@@ -1,12 +1,16 @@
-import React from 'react'
+import User from './componetns/User'
 
 const App = () => {
   return (
-    <div>
-      app
-    </div>
+    <>
+      <User name="Manoj" department="IT"
+      skills={['HTML','CSS','JS','REACT']}
+      games={["cricket","football"]}/>
+    </>
   )
 }
 
+
 export default App
 
+ 
