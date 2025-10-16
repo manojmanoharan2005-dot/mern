@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar'
 import State from './hooks/State'
+import Contact from './pages/Contact'
 
 
 const App = () => {
@@ -16,14 +17,8 @@ const App = () => {
         <Route path='/home' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
         <Route path='/state' element={<State />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
       </Routes>
-
-      <User 
-        name="Manoj" 
-        department="AIML"
-        skills={["HTML","CSS","JS"]}
-        projects={["Annual Report Portal", "CareerCompass", "StyleRecommender"]}
-      />
     </>
   )
 }

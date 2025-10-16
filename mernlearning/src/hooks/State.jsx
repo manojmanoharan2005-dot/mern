@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const State = () => {
-  const [count, setCount] = useState(0)  // Initialize count state with 0
+  const [count, setCount] = useState(0)
 
   return (
     <div>
