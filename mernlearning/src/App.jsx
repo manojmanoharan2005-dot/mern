@@ -4,6 +4,7 @@ import User from './components/User'
 import Home from './pages/Home' 
 import About from './pages/About'
 import Navbar from './components/Navbar'
+import State from './hooks/State'
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route path='/' element={<Home />}></Route>
         <Route path='/home' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
+        <Route path='/state' element={<State />}></Route>
       </Routes>
 
       <User 
