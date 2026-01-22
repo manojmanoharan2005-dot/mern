@@ -10,7 +10,8 @@ mongoose.connect(process.env.MONGO_URL).then(() => {
 }).catch((err) => {
     console.log(err);
 });
-app.use("/api", require("./routes/authRoutes"))
+app.use("/auth", require("./routes/authRoutes"));
+app.use("/task", require("./routes/taskRoutes"));
 
 
 app.get("/api", (req, res) => {
@@ -23,3 +24,4 @@ app.post("/api", (req, res) => {
 app.listen(4000, () => {
     console.log("Server is running on port 4000");
 });
+ 
